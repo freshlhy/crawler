@@ -74,12 +74,10 @@ public class User {
 			urlParameters
 					.add(new BasicNameValuePair("user[birthday]", birthday));
 			urlParameters.add(new BasicNameValuePair("user[mobile]", mobile));
-			urlParameters.add(new BasicNameValuePair("user[place_id]", String
+			urlParameters.add(new BasicNameValuePair("user[place]", String
 					.valueOf(placeCode)));
 			urlParameters.add(new BasicNameValuePair("user[avatar]", avatar + "@1"));
 			http.sendPost("http://192.168.186.150:3000/users", urlParameters);
-
-			break;
 
 		}
 	}
